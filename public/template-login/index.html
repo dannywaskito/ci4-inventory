@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login E-Inventory</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="user singinBx">
+				<div class="imgBx">
+					<img src="img/keyboard.jpg">
+				</div>
+				<div class="formBx">
+					<form action="">
+						<h2>Sign In</h2>
+						<input type="text" name="username" placeholder="username">
+						<input type="password" name="password" placeholder="password">
+						<input type="submit" value="Login">
+						<p class="signup">Belum Punya Akun ?<a href="#" onclick="toggleForm();"> Daftar</a></p>
+					</form>
+				</div>
+			</div>
+			<!-- Sign Up -->
+			<div class="user singupBx">
+				<div class="formBx">
+					<form action="">
+						<h2>Daftar Akun</h2>
+						<input type="text" name="username" placeholder="username">
+						<input type="password" name="password" placeholder="password">
+						<input type="submit" value="Daftar">
+						<p class="signup">Sudah Punya Akun ?<a href="#" onclick="toggleForm();"> Login</a></p>
+					</form>
+				</div>
+				<div class="imgBx"><img src="img/laptop.jpg"></div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function toggleForm(){
+			var container = document.querySelector('.container');
+			container.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
